@@ -1,17 +1,132 @@
 package fr.ecole.tp;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    static void main() {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        IO.println(String.format("Hello and welcome!"));
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            IO.println("i = " + i);
-        }
+    public static void main(String[] args) {
+
+        DataFactory dataFactory = new DataFactory();
+        dataFactory.init();
+
+        Services services = new Services();
+
+        var produits = dataFactory.getProduits();
+        var commandes = dataFactory.getCommandes();
+
+        System.out.println("=== FONCTIONNALITE 1 : CONSUMER ===");
+
+        services.afficherProduit(produits);
+
+
+        System.out.println("\n=== FONCTIONNALITE 2 : FUNCTION ===");
+
+        // méthode non créée dans Services
+
+
+
+        System.out.println("\n=== FONCTIONNALITE 3 : PREDICATE ===");
+
+        // méthodes non créées dans Services
+
+
+        System.out.println("\n=== FONCTIONNALITE 4 : DOUBLE FILTER ===");
+
+        // méthode non créée dans Services
+
+
+        System.out.println("\n=== FONCTIONNALITE 5 : MAP MAJUSCULE ===");
+
+        services.afficherNomsProduitsEnMajuscules(produits);
+
+
+        System.out.println("\n=== FONCTIONNALITE 6 : TRI ===");
+
+        System.out.println("\n--- Prix croissant ---");
+
+        services.trierPrixCroissant(produits)
+                .forEach(System.out::println);
+
+        System.out.println("\n--- Prix décroissant ---");
+
+        services.trierPrixDecroissant(produits)
+                .forEach(System.out::println);
+
+        System.out.println("\n--- Catégorie puis nom ---");
+
+        services.trierCategoriePuisNom(produits)
+                .forEach(System.out::println);
+
+
+        System.out.println("\n=== FONCTIONNALITE 7 : DISTINCT / SET ===");
+
+        // méthode non créée dans Services
+
+
+        System.out.println("\n=== FONCTIONNALITE 8 : TOP 3 ===");
+
+        services.ProduitsChers(produits);
+
+
+        System.out.println("\n=== FONCTIONNALITE 9 : PAGINATION ===");
+
+        System.out.println("\n--- Page 1 ---");
+
+        services.afficherPageProduits(produits, 1, 5);
+
+        System.out.println("\n--- Page 2 ---");
+
+        services.afficherPageProduits(produits, 2, 5);
+
+
+        System.out.println("\n=== FONCTIONNALITE 10 : REDUCE ===");
+
+        // méthode non créée dans Services
+
+
+        System.out.println("\n=== FONCTIONNALITE 11 : MAPTODOUBLE SUM ===");
+
+        // méthode non créée dans Services
+
+
+        System.out.println("\n=== FONCTIONNALITE 12 ===");
+
+        services.VerifProduitEnPromotion(produits);
+
+        services.tousPrixPositifs(produits);
+
+        System.out.println("\nPremier produit catégorie Informatique :");
+
+        services.premierProduitInformatique(produits);
+
+        System.out.println("\nProduit le plus cher :");
+
+        services.produitLePlusCher(produits);
+
+
+        System.out.println("\n=== FONCTIONNALITE 14 : TOTAL PAR COMMANDE ===");
+
+        services.totalParCommande(commandes);
+
+
+        System.out.println("\n=== FONCTIONNALITE 15 : MAP COMMANDES ===");
+
+        services.mapTotalParCommande(commandes);
+
+
+        System.out.println("\n=== FONCTIONNALITE 16 : SUPPLIER ===");
+
+        services.genererIdCommande();
+
+
+        System.out.println("\n=== FONCTIONNALITE 17 : UNARY OPERATOR ===");
+
+        services.nettoyerSaisie("   BONJOUR JAVA   ");
+
+
+        System.out.println("\n=== FONCTIONNALITE 18 : REFERENCES DE METHODES ===");
+
+        services.referencesDeMethodes(produits);
+
+
+
     }
 }

@@ -12,7 +12,7 @@ public class DataFactory {
     public void init() {
 
 
-        categorieList.add("Info");
+        categorieList.add("Informatique");
         categorieList.add("Telephonie");
         categorieList.add("Electromenager");
         categorieList.add("Gaming");
