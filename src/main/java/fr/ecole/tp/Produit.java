@@ -1,5 +1,7 @@
 package fr.ecole.tp;
 
+import java.util.function.Consumer;
+
 public class Produit {
 
     private String id;
@@ -66,5 +68,6 @@ public class Produit {
                 ", promotion=" + promotion +
                 '}';
     }
+
 
 }
