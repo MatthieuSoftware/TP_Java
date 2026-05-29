@@ -2,13 +2,13 @@ package fr.ecole.tp;
 
 public class Produit {
 
-    private String id;
+    private int id;
     private String nom;
     private String categorie;
     private double prix;
     private boolean promotion;
 
-    public Produit(String id, String nom, String categorie, double prix, boolean promotion) {
+    public Produit(int id, String nom, String categorie, double prix, boolean promotion) {
         this.id = id;
         this.nom = nom;
         this.categorie = categorie;
@@ -16,11 +16,11 @@ public class Produit {
         this.promotion = promotion;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

@@ -3,11 +3,11 @@ package fr.ecole.tp;
 import java.util.List;
 
 public class Commande {
-    private String id;
+    private int id;
     private  Client client;
     private List<LigneCommande> lignes;
 
-    public Commande(String id, Client client, List<LigneCommande> lignes) {
+    public Commande(int id, Client client, List<LigneCommande> lignes) {
         this.id = id;
         this.client = client;
         this.lignes = lignes;
@@ -17,7 +17,7 @@ public class Commande {
         return client;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
@@ -29,7 +29,7 @@ public class Commande {
         this.client = client;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

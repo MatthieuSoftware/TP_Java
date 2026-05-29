@@ -1,17 +1,17 @@
 package fr.ecole.tp;
 
 public class Client {
-    private  String id;
+    private  int id;
     private  String nom;
     private  String email;
 
-    public Client(String id, String nom, String email) {
+    public Client(int id, String nom, String email) {
         this.id = id;
         this.nom = nom;
         this.email = email;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
@@ -23,7 +23,7 @@ public class Client {
         return email;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
