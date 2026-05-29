@@ -19,18 +19,16 @@ public class Main {
 
         System.out.println("\n=== FONCTIONNALITE 2 : FUNCTION ===");
 
-        // méthode non créée dans Services
 
 
 
         System.out.println("\n=== FONCTIONNALITE 3 : PREDICATE ===");
 
-        // méthodes non créées dans Services
 
 
         System.out.println("\n=== FONCTIONNALITE 4 : DOUBLE FILTER ===");
 
-        // méthode non créée dans Services
+        services.filtrage(produits);
 
 
         System.out.println("\n=== FONCTIONNALITE 5 : MAP MAJUSCULE ===");
@@ -58,7 +56,8 @@ public class Main {
 
         System.out.println("\n=== FONCTIONNALITE 7 : DISTINCT / SET ===");
 
-        // méthode non créée dans Services
+        services.catDistinct(produits);
+        services.cateToSet(produits);
 
 
         System.out.println("\n=== FONCTIONNALITE 8 : TOP 3 ===");
@@ -78,13 +77,12 @@ public class Main {
 
 
         System.out.println("\n=== FONCTIONNALITE 10 : REDUCE ===");
-
-        // méthode non créée dans Services
+        services.reduc(produits);
 
 
         System.out.println("\n=== FONCTIONNALITE 11 : MAPTODOUBLE SUM ===");
 
-        // méthode non créée dans Services
+        services.somme(produits);
 
 
         System.out.println("\n=== FONCTIONNALITE 12 ===");

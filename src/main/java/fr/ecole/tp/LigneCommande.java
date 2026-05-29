@@ -1,5 +1,6 @@
 package fr.ecole.tp;
 
+
 public class LigneCommande {
     private  Produit produit;
     private  int quantite;

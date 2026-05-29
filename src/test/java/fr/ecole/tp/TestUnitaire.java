@@ -1,7 +1,6 @@
 package fr.ecole.tp;
-
-import fr.ecole.tp.model.Produit;
-import fr.ecole.tp.service.Services;
+import fr.ecole.tp.Produit;
+import fr.ecole.tp.Services;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;
