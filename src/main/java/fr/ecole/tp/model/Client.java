@@ -1,4 +1,4 @@
-package fr.ecole.tp;
+package fr.ecole.tp.model;
 
 public class Client {
     private  int id;

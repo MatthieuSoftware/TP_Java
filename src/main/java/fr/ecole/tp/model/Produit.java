@@ -1,13 +1,11 @@
-package fr.ecole.tp;
-
-import java.util.function.Consumer;
+package fr.ecole.tp.model;
 
 public class Produit {
 
     private int id;
     private String nom;
     private String categorie;
-    private double prix;
+    private Double prix;
     private boolean promotion;
 
     public Produit(int id, String nom, String categorie, double prix, boolean promotion) {

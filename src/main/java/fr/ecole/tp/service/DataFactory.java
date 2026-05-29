@@ -1,4 +1,9 @@
-package fr.ecole.tp;
+package fr.ecole.tp.service;
+
+import fr.ecole.tp.model.Client;
+import fr.ecole.tp.model.Commande;
+import fr.ecole.tp.model.LigneCommande;
+import fr.ecole.tp.model.Produit;
 
 import java.util.ArrayList;
 

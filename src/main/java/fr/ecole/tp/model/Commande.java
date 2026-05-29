@@ -1,10 +1,10 @@
-package fr.ecole.tp;
+package fr.ecole.tp.model;
 
 import java.util.List;
 
 public class Commande {
     private int id;
-    private  Client client;
+    private Client client;
     private List<LigneCommande> lignes;
 
     public Commande(int id, Client client, List<LigneCommande> lignes) {
